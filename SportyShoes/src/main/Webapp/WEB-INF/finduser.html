@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<H3>Find User ByUserName</H3>
+<br>
+<form action="#"th:action="@{/find{username}"th:object="${userdetails}"method="post">
+<table>
+<tr>
+<td>UserName:</td>
+<td><input type="text" th:field="*{username}"/>
+</td>
+<tr>
+<td><button type="submit">Search</button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
